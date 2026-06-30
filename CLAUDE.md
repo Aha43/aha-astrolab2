@@ -36,10 +36,17 @@ Use a plain `<figure>` (no `markdown="span"` — there's no Markdown to parse in
 and it avoids stray `<br>` tags). Size videos with `max-width`, not a small percentage:
 a small percentage width shrinks the player until its controls can't be clicked.
 
+**Path gotcha:** MkDocs rewrites relative paths inside *Markdown* (`![](../images/x)` becomes
+the right depth automatically), but it does **not** touch `src`/`href` inside raw HTML. With
+directory URLs (the default), a content page one level under `docs/` lives at a URL two
+segments deep, so raw-HTML media must go up **two** levels: `../../videos/...` (same depth
+MkDocs emits for the sibling images, `../../images/...`). Using `../videos/` 404s and the
+player shows a black screen with dead controls.
+
 ```html
 <figure>
-  <video controls playsinline style="width:100%; max-width:560px;">
-    <source src="../videos/your-clip.mp4" type="video/mp4">
+  <video controls playsinline style="width:100%; max-width:360px;">
+    <source src="../../videos/your-clip.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <figcaption>Caption</figcaption>

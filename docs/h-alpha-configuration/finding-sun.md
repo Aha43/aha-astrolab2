@@ -6,7 +6,7 @@ The video shows the full process. After powering on, the mount will first level 
 
 <figure>
   <video controls playsinline style="width:100%; max-width:360px;">
-    <source src="../videos/solarquest-scan.mp4" type="video/mp4">
+    <source src="../../videos/solarquest-scan.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <figcaption>SolarQuest</figcaption>
