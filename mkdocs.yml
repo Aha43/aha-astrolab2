@@ -1,0 +1,91 @@
+site_name: aha-astrolab
+site_description: Equipment manual and notes for solar (H-Alpha and white-light) and general astronomy observing.
+site_author: Aha43
+site_url: https://aha43.github.io/aha-astrolab2/
+repo_url: https://github.com/Aha43/aha-astrolab2
+repo_name: Aha43/aha-astrolab2
+copyright: Copyright &copy; Aha43
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/telescope
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.caret
+  - pymdownx.tilde
+
+plugins:
+  - search
+
+nav:
+  - Introduction: index.md
+  - LS60MT Configurations:
+      - ls60mt-configurations/index.md
+      - H-Alpha Configuration: ls60mt-configurations/h-alpha.md
+      - White-Light Configuration: ls60mt-configurations/white-light.md
+      - Night Configuration: ls60mt-configurations/night.md
+  - H-Alpha Setup:
+      - Starting Configuration: h-alpha-configuration/starting-configuration.md
+      - Remove the Focuser: h-alpha-configuration/remove-focuser.md
+      - Install the Etalon Module: h-alpha-configuration/install-etalon-module.md
+      - Reinstall the Focuser: h-alpha-configuration/reinstall-focuser.md
+      - Install the B1200 Blocking Filter: h-alpha-configuration/install-blocking-filter.md
+      - Placing the Tripod: h-alpha-configuration/placing-tripod.md
+      - Preparing the Mount Saddle: h-alpha-configuration/preparing-mount-saddle.md
+      - Mounting the Dovetail: h-alpha-configuration/mounting-dovetail.md
+      - Using the Pentax Zoom: h-alpha-configuration/using-pentax-zoom.md
+      - Inserting Equipment in the B1200: h-alpha-configuration/inserting-equipment-b1200.md
+      - Finding the Sun: h-alpha-configuration/finding-sun.md
+      - Using the Solar Finder: h-alpha-configuration/solar-finder.md
+  - White-Light Setup:
+      - Starting Configuration: white-light-configuration/starting-configuration.md
+      - Remove the B1200 Diagonal: white-light-configuration/remove-blocking-filter.md
+      - Remove the Focuser: white-light-configuration/remove-focuser.md
+      - Remove the Etalon Module: white-light-configuration/remove-etalon-module.md
+      - Reattach the Focuser: white-light-configuration/reattach-focuser.md
+      - Mount the Herschel Wedge: white-light-configuration/mount-herschel-wedge.md
+      - Mount the Pentax Zoom: white-light-configuration/mount-pentax-zoom.md
+  - Night Setup:
+      - Starting Configuration: night-configuration/starting-configuration.md
+  - Solar Imaging:
+      - Camera and Adapter Overview: camera-imaging/camera-adapter-overview.md
+      - H-Alpha Full Disk: camera-imaging/h-alpha-full-disk.md
+      - White-Light Full Disk: camera-imaging/white-light-full-disk.md
+      - Configure Powermate for T2: camera-imaging/configure-powermate-t2.md
+      - H-Alpha with Powermate 2x: camera-imaging/h-alpha-powermate.md
+      - White-Light with Powermate 2x: camera-imaging/white-light-powermate.md

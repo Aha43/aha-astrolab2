@@ -1,0 +1,12 @@
+# Install The B1200 Blocking Filter
+
+Mount the B1200 blocking filter diagonal into the focuser as shown in the image. This is the only diagonal that can and must be used in this configuration to safely observe or image the Sun.
+
+It is recommended to mount the telescope in this state first, and attach any viewing or imaging elements (Pentax Zoom, Powermate 2x, or camera in any combination) once the instrument is on the mount.
+
+Ensure the thumb screws securing the diagonal are tightened before proceeding mounting the telescope.
+
+<figure markdown="span">
+  ![LS60MT Configured For H-Alpha](../images/001100_ls60mt_with_etalon_and_b1200-diagonal_mounted.jpg){ style="width:30%;" }
+  <figcaption>LS60MT Configured For H-Alpha</figcaption>
+</figure>
